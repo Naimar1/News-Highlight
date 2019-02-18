@@ -9,6 +9,13 @@
         {% endif %}
     </head>
     <body>
+        <!-- current news section  -->
+        <h3> Current News</h3>
+         <ul>
+            {% for current_news in current %}
+                <li>{{ current_news.heading}}</li>
+            {% endfor %}
+        </ul>
 
     </body>
 </html>
