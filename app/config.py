@@ -2,9 +2,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    pass
-
-
+    NEWS_API_BASE_URL ='https://newsapi.org/v2/everything?q=bitcoin&from=2019-01-18&sortBy=publishedAt&apiKey=b58fc903a9dc464f99d15641759532a6'
+    
 
 class ProdConfig(Config):
     '''
@@ -25,3 +24,5 @@ class DevConfig(Config):
     '''
 
     DEBUG = True
+
+   
