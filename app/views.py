@@ -26,4 +26,4 @@ def index():
     print(current_newshl)
 
     heading = 'Home - Welcome to The best News Review Website Online'
-    return render_template('index.html', heading = heading,current = current_newshl)
+    return render_template('index.html', heading = heading, current = current_newshl)
