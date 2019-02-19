@@ -5,15 +5,19 @@
         {% if heading %}
         <title> {{ heading }}</title>
         {% else %}
-        <title> Welcome to the latest news.</title>
+        <title> Welcome to the latest News website .</title>
         {% endif %}
     </head>
+    {% extends 'base.html'%}
     {% import 'macros.html' as macro%}
     <body>
+        <!-- Content block -->
+    {% block content %}
         <!-- current news section  -->
-        <h3> Current News</h3>
+        <h1> Latest News</h1>
         <ul>
             {{ macro.displayNewsList(current)}}
         </ul>
+    {% endblock%}
     </body>
 </html>

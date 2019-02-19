@@ -1,16 +1,8 @@
 from flask import render_template
 from app import app
-from .request import get_newshl
+from .request import get_sources,get_articles
 
 # Views
-@app.route('/news/<string:news_article>')
-def news(news_article):
-
-    '''
-    View news page function that returns the news details page and its articles
-    '''
-    return render_template('news.html',title = news_article)
-
 @app.route('/')
 def index():
 
@@ -18,12 +10,23 @@ def index():
     View root page function that returns the index page and its data
     '''
 
-    heading = 'Home - Welcome to our News Highlight'
-    return render_template('index.html', heading = heading)
+    # heading = 'Home - Welcome to our News Highlight'
+    # return render_template('index.html', heading = heading)
 
     # Getting current news
-    current_newshl = get_newshl('current')
-    print(current_newshl)
+    current_sources = get_sources('everything')
+    # print('current_newshl')
 
     heading = 'Home - Welcome to The best News Review Website Online'
-    return render_template('index.html', heading = heading, current = current_newshl)
+    return render_template('index.html', heading = heading, current = current_sources)
+
+@app.route('/articles/<id>')
+def articles(id):
+
+    '''
+    View some page source function that returns the news details page and its articles
+    '''
+    articles = get_articles(id)
+    title = f'{id}'
+    return render_template('news.html',id = id, articles = articles)
+

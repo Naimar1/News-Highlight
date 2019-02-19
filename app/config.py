@@ -2,8 +2,8 @@ class Config:
     '''
     General configuration parent class
     '''
-    NEWS_API_BASE_URL ='https://newsapi.org/v2/everything?q=bitcoin&from=2019-01-18&sortBy=publishedAt&apiKey=b58fc903a9dc464f99d15641759532a6'
-    
+    NEWS_SOURCES_BASE_URL ='https://newsapi.org/v2/sources?category={}&apiKey={}'
+    NEWS_ARTICLES_API_BASE_URL ='https://newsapi.org/v2/everything?q=bitcoin&category={}&apiKey={}'
 
 class ProdConfig(Config):
     '''
