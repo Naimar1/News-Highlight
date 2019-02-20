@@ -21,3 +21,7 @@ Also you can read more information about the article .
 * atom .
 * run : python3 name of the file.py
 
+## Known Bugs
+Hope that my codes is clear and understandable,
+There are no errors, by mistake if you find them please contact me for the below address.
+
