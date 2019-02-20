@@ -11,4 +11,6 @@ Also you can read more information about the article .
 
 | News     | Source News       | News Article |
 | ------------- |:-------------:| -----:|
-| This is where you can see differents news .| It is where we find our different source news. for instance Al Jazeera,ABC News etc..| Here you can find specific news article from that source i said.|
+| This is where you can see differents news .| It is where we find our different source news.| Here you can find specific news article .|
+| Going to choose news | for instance Al Jazeera,ABC News,BBC News, Axios etc.... | You may select source news like BBC News and then read specif article news depends on which one you want |
+
