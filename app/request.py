@@ -3,10 +3,10 @@ from app import app
 from .models import newsAr
 
 News = newsAr.News
+Article = newsAr.Article
 
 # Getting api key
 api_key = app.config['NEWS_API_KEY']
-
 
 # Getting the news base url
 source_base_url = app.config['NEWS_SOURCES_BASE_URL']
@@ -15,18 +15,18 @@ def get_sources(category):
     '''
     Function that gets the json response to our url request
     '''
-    get_sources_url = source_base_url.format(category,api_key)
+    get_sources_url = source_base_url.format(api_key)
     
     with urllib.request.urlopen(get_sources_url) as url:
         get_sources_data = url.read()
         get_sources_response = json.loads(get_sources_data)
-        
+        # print(get_sources_response)
         news_results = None
 
         if get_sources_response['sources']:
             news_results_list = get_sources_response['sources']
             news_results = process_results(news_results_list)
-    print(news_results) 
+     
     return news_results
             
 def process_results(news_list):
@@ -51,7 +51,9 @@ def process_results(news_list):
     return news_results
 
 def get_articles(id):
-    '''Function thet gets the json response to our url request'''
+    '''
+    Function thet gets the json response to our url request
+    '''
     get_articles_url = articles_base_url.format(id,api_key)
 
     with urllib.request.urlopen(get_articles_url) as url:
@@ -66,7 +68,7 @@ def get_articles(id):
 
     return article_results   
 
-def process_results(article_list):
+def process_articles(article_list):
     '''
     Function that processes the article result and transforms them to a list of objects
     Args:

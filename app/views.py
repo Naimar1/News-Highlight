@@ -1,4 +1,5 @@
 from flask import render_template
+from . import main
 from app import app
 from .request import get_sources,get_articles
 

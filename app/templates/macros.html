@@ -3,18 +3,18 @@
     {% for news in news_list %}
     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
         <div class="panel" style="border-bottom: 1px solid #000;">
-            <div class="panel-heading" style="background-color:#000; color: #fff; font-size: 18px;">{{source.name}}</div>
               <div class="panel-body" style="font-size: 16px;">
                 <p>{{news.name | truncate(100)}}</p>
-                <a href="/articles/{{news.id}}" class="btn" style="color: #fff; background-color: #000;">All infos</a>
+                <a href="/articles/{{news.id}}" class="btn" style="color:bisque; background-color: darkcyan;">{{news.name}}</a>
               </div>
         </div>
     </div>
+
     <p>{{ news.title}}</p>
     {% endfor %}
 
 {% endmacro %}
-
+<!-- 
 {% macro displayArticleList(article_list) %}
 
     {% for article in article_list %}
@@ -28,4 +28,4 @@
           <a href="{{article.url}}" target="_blank" class="btn" style="background-color: #000; color: #fff; margin-top: 5px;">View More...</a>
       </div>
     {% endfor %}
-{% endmacro %}
+{% endmacro %} -->
