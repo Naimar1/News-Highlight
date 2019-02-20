@@ -12,5 +12,12 @@ Also you can read more information about the article .
 | News     | Source News       | News Article |
 | ------------- |:-------------:| -----:|
 | This is where you can see differents news .| It is where we find our different source news.| Here you can find specific news article .|
-| Going to choose news | for instance Al Jazeera,ABC News,BBC News, Axios etc.... | You may select source news like BBC News and then read specif article news depends on which one you want |
+| Going to choose news | For instance Al Jazeera,ABC News,BBC News, Axios etc.... | You may select source news like BBC News and then read specific article news depends on which one you want |
+
+## Setup/Installation Requirements
+* 
+* cd News-Highlight
+* code . (if you are using visual studio)
+* atom .
+* run : python3 name of the file.py
 
