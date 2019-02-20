@@ -25,3 +25,6 @@ Also you can read more information about the article .
 Hope that my codes is clear and understandable,
 There are no errors, by mistake if you find them please contact me for the below address.
 
+## Technologies Used
+ * Python
+
