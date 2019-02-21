@@ -12,17 +12,20 @@
         <!-- Content block -->
     {% block content %}
         <!-- current news section  -->
-    <div class="jumbotron">
-        <h1 style> Source News</h1>
-    </div>
-    <div class="container">
+<div class="container">
+    <div class="jumbotron" style="min-height: 500vh">
+        <div class="well">
+           <img src="https://idonsabi.com/wp-content/uploads/2019/01/wnnnn.gif" style="height: 400px; width: 980px;">
+        </div> 
         <form>
-            <input type="text" name="movie_query" placeholder="Search for a Movie" class="form-control">
+            <input type="text" name="article_query" placeholder="Search N.article" class="form-control">
             <input type="submit"  value="Submit" class="btn btn-danger">
         </form>
-    
-    </div>
-        <ul>
-            {{ macro.displayNewsList(current)}}
-        </ul>
+        <div class="row">
+            <!-- <ul> -->
+                    {{ macro.displayNewsList(current)}}
+                <!-- </ul> -->
+        </div>
+    </div>        
+</div>        
     {% endblock%}

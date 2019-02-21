@@ -93,7 +93,7 @@ def process_articles(article_list):
     return article_results
 
 def search_article(article_name):
-    search_article_url = 'https://api.themoviedb.org/3/search/movie?api_key={}&query={}'.format(api_key,article_name)
+    search_article_url = 'https://newsapi.org/v2/everything?sources={}&apiKey={}&query={"Coinbase users can now withdraw Bitcoin SV following BCH fork"}'.format(api_key,article_name)
     with urllib.request.urlopen(search_article_url) as url:
         search_article_data = url.read()
         search_article_response = json.loads(search_article_data)

@@ -1,8 +1,8 @@
 {% macro displayNewsList(news_list) %}
 
     {% for news in news_list %}
-    <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
-        <div class="panel" style="border-bottom: 1px solid #000;">
+    <div class="col-md-6">
+        <div class="panel" style="border-bottom: 3px solid #000; width: 100%">
               <div class="panel-body" style="font-size: 16px;">
                 <p>{{news.name | truncate(100)}}</p>
                 <a href="/articles/{{news.id}}" class="btn" style="color:bisque; background-color: darkcyan;">{{news.name}}</a>
