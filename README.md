@@ -15,7 +15,7 @@ Also you can read more information about the article .
 | Going to choose news | For instance Al Jazeera,ABC News,BBC News, Axios etc.... | You may select source news like BBC News and then read specific article news depends on which one you want |
 
 ## Setup/Installation Requirements
-* 
+* Link to visit: https://naima-project.herokuapp.com/
 * cd News-Highlight
 * code . (if you are using visual studio)
 * atom .
